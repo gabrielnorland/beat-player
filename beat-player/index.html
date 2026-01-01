@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beat Player Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="panel">
+      <div class="top-row">
+        <button class="pad" id="btnDrums" aria-pressed="false" title="Drums">
+          <img src="assets/icons/drums.svg" alt="Drums" />
+        </button>
+        <button class="pad" id="btnDjembe" aria-pressed="false" title="Djembe">
+          <img src="assets/icons/djembe.svg" alt="Djembe" />
+        </button>
+        <button class="pad" id="btnMelody" aria-pressed="false" title="Melody">
+          <img src="assets/icons/melody.svg" alt="Melody" />
+        </button>
+        <button class="pad" id="btnDice" aria-pressed="false" title="New Melody">
+          <img src="assets/icons/dice.svg" alt="Dice" />
+        </button>
+      </div>
+
+      <div class="bottom-row">
+        <div class="bpm-readout">
+          <div class="bpm-number"><span id="bpmText">85</span> bpm</div>
+        </div>
+
+        <div class="slider-wrap">
+          <input id="bpm" type="range" min="60" max="140" value="85" step="1" />
+        </div>
+      </div>
+
+      <div class="hint">
+        Click any toggle to start audio. Dice generates a new melody.
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
